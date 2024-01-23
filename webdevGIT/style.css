@@ -1,0 +1,24 @@
+*{font-family:sans-serif ;}
+h1{
+    color: black;
+    
+}
+.sub{
+    background-color: red;
+    margin-right: 85rem;
+    padding-left: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    border-radius: 5px;
+}
+.like{
+    margin-top:20px;
+    background-color:blue;
+    margin-right: 85rem;
+    padding-left: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    border-radius: 5px;
+}
