@@ -4,7 +4,6 @@ h1{
     
 }
 .sub{
-    background-color: red;
     margin-right: 85rem;
     padding-left: 12px;
     padding-top: 5px;
@@ -14,11 +13,23 @@ h1{
 }
 .like{
     margin-top:20px;
-    background-color:blue;
     margin-right: 85rem;
     padding-left: 12px;
     padding-top: 5px;
     padding-bottom: 5px;
     color: white;
     border-radius: 5px;
+}
+.likecolor{
+    background-color: blue;
+}
+.unlikecolor{
+    background-color: rgb(15, 15, 121);
+}
+
+.subcolor{
+    background-color: red;
+}
+.unsubcolor{
+    background-color: rgb(114, 11, 11);
 }
