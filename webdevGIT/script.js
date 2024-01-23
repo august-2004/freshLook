@@ -39,5 +39,8 @@ function likes(){
     }
 }
 
+
+
+
 subButton.onclick= subscribe;
 likeButton.onclick = likes;
