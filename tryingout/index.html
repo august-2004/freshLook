@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" src="styles.css">
+    <link rel="stylesheet" href="styles.css">
     <title>New Tab</title>
 </head>
 <body>
-
-<script src="script.js"></script>
+<div class="container1">
+    <p class="nowtime">10:00</p>
+    <p class="greeting"><span class="greetword">Hello </span><span class="usersname">User</span></p>
+    <p>What's Your Goal Today ?</p>
+    <form class="taskform">
+        <input type="text" autocomplete="off" type="submit" class="taskinp" placeholder="Enter a Task"></input>
+        <span class="taskbutton">Add</span>
+    </form>
+    <div><ul  class="tasks"></ul></div>
+</div> 
+<script src="scripts.js"></script>
 </body>
 </html>
+
