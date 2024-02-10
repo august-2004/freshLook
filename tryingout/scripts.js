@@ -5,6 +5,11 @@ let taskInput = document.querySelector(".taskinp");
 let taskDiv = document.querySelector(".tasks");
 let taskAdd = document.querySelector(".taskbutton");
 taskAdd.onclick = taskmaker;
+taskInput.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+      taskmaker();
+    }
+  });
 function taskmaker(){
     if (taskInput.value != ""){
     const node = document.createElement("li");
