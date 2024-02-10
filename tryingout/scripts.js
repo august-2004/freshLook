@@ -17,9 +17,9 @@ function taskmaker(){
     tasksList.push(taskInput.value);
     taskDiv.appendChild(node);
     taskInput.value="";
-    console.log("working");}
+    saveTasks();
+    }
 }
-
 
 
 //time 
@@ -34,11 +34,28 @@ if (hour >12)
 {
     hour-=12;
 }
+if (hour<10)
+{
+    hour = "0"+hour;
+}
 
+if (min<10)
+{
+    min = "0"+min;
+}
 time.innerHTML=hour +":" +min;
 }
 setInterval(timeUpdater, 1000);
 
 
+//save data
 
+function saveTasks(){
+    localStorage.setItem("tasks",taskDiv.innerHTML);
+}
 
+function retrieveTasks(){
+    taskDiv.innerHTML = localStorage.getItem("tasks");
+}
+
+retrieveTasks();

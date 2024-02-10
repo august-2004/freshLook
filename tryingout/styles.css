@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url(images/bg.jpg);
+    background-image: url(images/bg2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -47,7 +47,12 @@ body{
     padding-left: 20px;
     width: 230px;
     outline: none;
+
     
+}
+
+::placeholder{
+    color: rgb(148, 148, 148);
 }
 
 .taskdiv{
