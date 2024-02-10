@@ -33,3 +33,7 @@ if (hour >12)
 time.innerHTML=hour +":" +min;
 }
 setInterval(timeUpdater, 1000);
+
+
+
+
