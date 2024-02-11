@@ -23,7 +23,7 @@ body{
   padding: 20px;
   border-radius: 20px;
   max-width: 500px;
-  min-width: 500px;
+  min-width: 100px;
   backdrop-filter: blur(25px);
   box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);  
 
@@ -32,12 +32,14 @@ body{
 .greeting{
     font-size: 3em;
     padding: 10px;
+    animation: append-animate .9s ease-in;
     
     
 }
 .nowtime{
     font-size: 4em;
     font-weight: bold;
+    
     
 }
 .taskinp{
@@ -90,5 +92,20 @@ button{
     text-align: left;
     padding-left: 120px;
     margin-top: 10px;
+    
 }
 
+
+
+@keyframes append-animate {
+	from {
+		
+		opacity: 0;
+	}
+	to {
+		
+		opacity: 1;	
+	}
+}
+
+.in { animation: append-animate .9s ease-in;}

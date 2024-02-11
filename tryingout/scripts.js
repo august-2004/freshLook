@@ -14,12 +14,18 @@ function taskmaker(){
     if (taskInput.value != ""){
     const node = document.createElement("li");
     node.innerHTML=taskInput.value;
+    node.classList.add("in");
     tasksList.push(taskInput.value);
     taskDiv.appendChild(node);
     taskInput.value="";
+    
     saveTasks();
     }
 }
+
+
+
+
 
 
 //time 
