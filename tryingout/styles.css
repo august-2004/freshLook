@@ -108,4 +108,24 @@ button{
 	}
 }
 
+@keyframes delete-animate {
+	from {
+		
+		opacity: 1;
+	}
+	to {
+		
+		opacity: 0;	
+	}
+}
+
 .in { animation: append-animate .9s ease-in;}
+
+
+.deletion{
+    animation: delete-animate .9s normal;
+}
+
+.checked{
+    text-decoration: line-through;
+}

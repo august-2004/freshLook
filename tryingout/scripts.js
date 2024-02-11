@@ -1,4 +1,4 @@
-//tasks
+// add tasks
 
 let tasksList =[];
 let taskInput = document.querySelector(".taskinp");
@@ -23,6 +23,19 @@ function taskmaker(){
     }
 }
 
+//delete tasks
+
+taskDiv.addEventListener("click", (event)=>{
+    event.target.classList.toggle("checked");
+    event.target.classList.toggle("in");
+    event.target.classList.toggle("deletion");
+    setTimeout(()=>{
+        event.target.remove();
+        saveTasks();
+    }, 800);
+    
+    
+})
 
 
 
