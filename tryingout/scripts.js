@@ -38,6 +38,7 @@ taskDiv.addEventListener("click", (event)=>{
 })
 
 //show name
+
 let namediv = document.querySelector(".namediv");
 function showname(){
     namediv.innerHTML= "Hello "+localStorage.getItem("usernames")+" &#x2665";
@@ -51,6 +52,12 @@ if(localStorage.getItem("usernames")){
 //greeting input
 
 let greeting = document.querySelector(".greeting");
+greeting.onclick = ()=>{
+    if(greeting.value !=""){
+        nameadd();
+        showname();
+          }
+};
 greeting.addEventListener("keydown",(event) => {
     if (event.key === "Enter") {
         if(greeting.value !=""){
