@@ -37,9 +37,32 @@ taskDiv.addEventListener("click", (event)=>{
     
 })
 
+//show name
+let namediv = document.querySelector(".namediv");
+function showname(){
+    namediv.innerHTML= "Hello "+localStorage.getItem("usernames")+" &#x2665";
+    namediv.classList.add("greeting");
+}
 
+if(localStorage.getItem("usernames")){
+    showname();
+}
 
+//greeting input
 
+let greeting = document.querySelector(".greeting");
+greeting.addEventListener("keydown",(event) => {
+    if (event.key === "Enter") {
+        if(greeting.value !=""){
+      nameadd();
+      showname();
+        }
+    }});
+
+function nameadd()
+{
+    localStorage.setItem("usernames",greeting.value);
+}    
 
 //time 
 

@@ -30,12 +30,18 @@ body{
 }
 
 .greeting{
+    margin:0 auto;
     font-size: 3em;
     padding: 10px;
     animation: append-animate .9s ease-in;
-    
-    
+    background-color: rgba(255, 255, 255,0);
+    border: none;
+    outline: none;
+    width: 90%;
+    text-align: center;
+    align-content: center;
 }
+
 .nowtime{
     font-size: 4em;
     font-weight: bold;
@@ -70,19 +76,14 @@ body{
     color: black;
     background-color: rgba(255, 255, 255,0.2);
     display: flex;
-    
-    
-    
+        
 }
+
 button{
-    /* position:relative; */
-    
     justify-content: right;
     border-radius: 0px 50px 50px 0px;
     padding: 0 auto;
     height: 20px;
-    
-    /* margin-right: 25%; */
     border: none;
     cursor: pointer;
     background-color: rgba(255, 255, 255,0.2);
