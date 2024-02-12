@@ -29,17 +29,36 @@ body{
 
 }
 
+span{
+    width: 2px;
+}
 .greeting{
-    margin:0 auto;
+    margin: 0 auto;
+    margin-left: 2px;
+    font-size: 2em;
+    padding: 10px;
+    animation: append-animate .9s ease-in;
+    background-color: rgba(255, 255, 255,0);
+    border: none;
+    outline: none;
+    width: 80%;
+    text-align: center;
+    align-content: center;
+    display: inline;  
+}
+
+.greeting1{
+    margin: 0 auto;
     font-size: 3em;
     padding: 10px;
     animation: append-animate .9s ease-in;
     background-color: rgba(255, 255, 255,0);
     border: none;
     outline: none;
-    width: 90%;
+    width: 80%;
     text-align: center;
     align-content: center;
+    display: inline;  
 }
 
 .nowtime{

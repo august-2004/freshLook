@@ -42,20 +42,19 @@ taskDiv.addEventListener("click", (event)=>{
 let namediv = document.querySelector(".namediv");
 function showname(){
     namediv.innerHTML= "Hello "+localStorage.getItem("usernames");
-    namediv.classList.add("greeting");
+    namediv.classList.add("greeting1");
 }
 
-if(localStorage.getItem("usernames")){
-    showname();
-}
+
 
 //greeting input
 
 let greeting = document.querySelector(".greeting");
-greeting.onclick = ()=>{
+namediv.onclick = ()=>{
     if(greeting.value !=""){
         nameadd();
-        showname();
+        if(localStorage.getItem("usernames")){
+        showname();}
           }
 };
 greeting.addEventListener("keydown",(event) => {
@@ -108,3 +107,6 @@ function retrieveTasks(){
 }
 
 retrieveTasks();
+if(localStorage.getItem("usernames")){
+    showname();
+}
