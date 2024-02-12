@@ -30,8 +30,17 @@ body{
 }
 
 span{
-    width: 2px;
+    width: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255,0);
+    transition: 0.3s;
 }
+
+span:hover{
+    background-color: rgba(255, 255, 255,0.2);
+}
+
 .greeting{
     margin: 0 auto;
     margin-left: 2px;
@@ -44,7 +53,7 @@ span{
     width: 80%;
     text-align: center;
     align-content: center;
-    display: inline;  
+    /* display: inline;   */
 }
 
 .greeting1{
@@ -58,7 +67,7 @@ span{
     width: 80%;
     text-align: center;
     align-content: center;
-    display: inline;  
+    /* display: inline;   */
 }
 
 .nowtime{
