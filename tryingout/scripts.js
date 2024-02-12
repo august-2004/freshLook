@@ -41,7 +41,7 @@ taskDiv.addEventListener("click", (event)=>{
 
 let namediv = document.querySelector(".namediv");
 function showname(){
-    namediv.innerHTML= "Hello "+localStorage.getItem("usernames")+" &#x2665";
+    namediv.innerHTML= "Hello "+localStorage.getItem("usernames");
     namediv.classList.add("greeting");
 }
 
